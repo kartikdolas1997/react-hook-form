@@ -2,6 +2,13 @@ import React from "react";
 import "../styles/App.scss";
 import { useForm } from "react-hook-form";
 import classNames from "classnames";
+import arr from "../../src/data"
+
+const getCity = (evt) =>{
+  console.log(evt.target.value);
+  console.log(arr);
+
+}
 
 
 function Validations() {
@@ -16,6 +23,8 @@ function Validations() {
   const onSubmit = (data) => {
     console.log(data);
   };
+
+
 
   return (
     <div>
@@ -95,7 +104,7 @@ function Validations() {
                   })}
                   id="password"
                   name="password"
-                  {...register("password",{
+                  {...register("password", {
                     required: "It is mandatory.",
                     pattern: {
                       value: /(7|8|9)\d{9}/,
@@ -150,25 +159,14 @@ function Validations() {
                   </label>
                 </div>
               </div>
-              {/* <div className="form-group">
-          <select className="custom-select" name="state" {...register("state")}>
-          <option value="">Select your state</option>
-          <option value="Delhi">Delhi</option>
-          <option value="Punjab">Punjab</option>
-          <option value="Jharkhand">Jharkhand</option>
-          <option value="Bihar">Bihar</option>
-        </select>
-          </div> */}
-
               <div className="form-group">
-                <label htmlFor="state">State</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="state"
-                  name="address.state"
-                  {...register("address.state")}
-                />
+                <select className="custom-select" name="state" {...register("address.state")} onChange={getCity}>
+                  <option value="">Select your state</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Jharkhand">Jharkhand</option>
+                  <option value="Bihar">Bihar</option>
+                </select>
               </div>
 
               <div className="form-group">

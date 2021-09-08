@@ -1,6 +1,6 @@
-export let arr = [
+ let arr = [
   {
-    "state": "Maharashtra",
+    "state": "Delhi",
     "state_code": "mh",
     "cities": [
       {
@@ -14,7 +14,35 @@ export let arr = [
     ]
   },
   {
-    "state": "Telangana",
+    "state": "Punjab",
+    "state_code": "pj",
+    "cities": [
+      {
+        "name": "Chandigarh",
+        "code": "hd"
+      },
+      {
+        "name": "Patiala",
+        "code": "pt"
+      }
+    ]
+  },
+  {
+    "state": "Jharkhand",
+    "state_code": "jk",
+    "cities": [
+      {
+        "name": "Ranchi",
+        "code": "rc"
+      },
+      {
+        "name": "Dhanbad",
+        "code": "db"
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
     "state_code": "ts",
     "cities": [
       {
@@ -28,3 +56,6 @@ export let arr = [
     ]
   }
 ]
+
+export default arr;
+
