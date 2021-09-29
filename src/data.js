@@ -1,6 +1,6 @@
  let arr = [
   {
-    "state": "Delhi",
+    "state": "Maharashtra",
     "state_code": "mh",
     "cities": [
       {
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "state": "Bihar",
+    "state": "Telangana",
     "state_code": "ts",
     "cities": [
       {
